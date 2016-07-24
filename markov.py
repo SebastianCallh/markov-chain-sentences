@@ -8,7 +8,7 @@ class MarkovChainSentence():
     
     def __init__(self, sentences):
         self.words = self.extract_words(sentences)
-        self.start_words = [(sentence.split(' ')[0].lower()) for sentence in sentences]
+        self.start_words = [(sentence.split(' ')[0]) for sentence in sentences]
 
     '''
     Returns a dict on the form {word: [next_word1, next_word1, next_word2]}.
